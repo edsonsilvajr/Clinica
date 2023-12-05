@@ -4,11 +4,11 @@ import java.time.LocalDate;
 
 public class Paciente extends Persona {
 	private String foto;
-	private LocalDate dataNascimento;
+	private String dataNascimento;
 	private String sexo;
 	private String formaPagamento;
 
-	public Paciente(String nome, String endereco, String telefone, String foto, LocalDate dataNascimento, String sexo,
+	public Paciente(String nome, String endereco, String telefone, String foto, String dataNascimento, String sexo,
 			String formaPagamento) {
 		super(nome, endereco, telefone);
 		this.foto = foto;
@@ -25,11 +25,11 @@ public class Paciente extends Persona {
 		this.foto = foto;
 	}
 
-	public LocalDate getDataNascimento() {
+	public String getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(LocalDate dataNascimento) {
+	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 
