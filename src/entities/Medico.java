@@ -1,20 +1,20 @@
 package entities;
 
 public class Medico extends Persona {
-	private int crm;
+	private String crm;
 	private Especialidade especialidade;
 
-	public Medico(String nome, String endereco, String telefone, int crm, Especialidade especialidade) {
+	public Medico(String nome, String endereco, String telefone, String crm, Especialidade especialidade) {
 		super(nome, endereco, telefone);
 		this.crm = crm;
 		this.especialidade = especialidade;
 	}
 
-	public int getCrm() {
+	public String getCrm() {
 		return crm;
 	}
 
-	public void setCrm(int crm) {
+	public void setCrm(String crm) {
 		this.crm = crm;
 	}
 
@@ -24,6 +24,11 @@ public class Medico extends Persona {
 
 	public void setEspecialidade(Especialidade especialidade) {
 		this.especialidade = especialidade;
+	}
+	
+	@Override
+	public String toString() {
+		return this.getNome() + " - CRM: " + this.getCrm();
 	}
 
 }

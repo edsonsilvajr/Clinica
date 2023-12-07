@@ -3,6 +3,7 @@ package entities;
 import java.time.LocalDate;
 
 public class Paciente extends Persona {
+	private int codigo;
 	private String foto;
 	private String dataNascimento;
 	private String sexo;
@@ -47,6 +48,14 @@ public class Paciente extends Persona {
 
 	public void setFormaPagamento(String formaPagamento) {
 		this.formaPagamento = formaPagamento;
+	}
+
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
 }
