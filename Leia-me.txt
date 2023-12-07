@@ -1,0 +1,3 @@
+Banco de dados = passos seguidos das aulas do moodle, exatamente como está lá, mesmo driver para banco de dados...etc
+
+no phpMyAdmin é necessário criar um banco chamado utfprdb e importar o arquivo que se encontra neste repositório lá.
